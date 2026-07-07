@@ -1227,6 +1227,8 @@
     "\"Folder Expansion Behavior\"": "\"資料夾擴展行為\"",
     "\"When more than one folder is expanded\"": "\"當超過一個資料夾被展開時\"",
     "\"Show role colors in member list role headers\"": "\"在成員清單身分組標題中顯示身分組顏色\"",
+    "\"Type a message to test rules on\"": "\"輸入訊息以測試規則\"",
+    "\"Message with rules applied\"": "\"套用規則後的訊息\"",
 
     "_SECTION_4": "========== 主題 (Themes) ==========",
     "\"Local Themes\"": "\"本地主題\"",
