@@ -2,9 +2,12 @@
 
 此 Repository (版本庫) 提供已預先修改之 `renderer.js` (渲染引擎腳本), 用於為 Vencord (Vencord 客戶端模組) 啟用完整的 Traditional Chinese (繁體中文) 本地化支援.
 
+* Vencord Official Website (Vencord 官方網站): https://vencord.dev/
+* Vencord GitHub Repository (Vencord 官方版本庫): https://github.com/Vendicated/Vencord
+
 ## 1. Architecture Overview (架構概述)
 * Methodology (實作方法): 直接替換已編譯之 `renderer.js` (渲染引擎腳本).
-* Deployment (部署): 終端使用者無需依賴 Python (Python 執行環境).
+* Deployment (部署): 終端使用者無需依賴 Python (Python 執行環境), 透過 Zip Archive (壓縮檔案) 覆寫即可生效.
 * Coverage (覆蓋率): 包含 Core UI (核心使用者介面), Settings (設定面板) 以及 100+ Plugin (外掛模組) 說明.
 
 ## 2. Repository Structure (版本庫結構)
@@ -17,10 +20,11 @@
   * `zh-TW.json`: Modular dictionary (模組化字典檔).
 
 ## 3. Deployment Protocol (部署流程 - 終端使用者)
-1. 定位 Vencord (Vencord 客戶端模組) 的 Output Directory (輸出目錄). Windows (Windows 作業系統) 預設路徑為: `%appdata%\Vencord\dist`.
-2. 將本機端的 `renderer.js` (渲染引擎腳本) 重新命名或備份, 以確保可退回至 Safe State (安全狀態).
-3. 將此 Repository (版本庫) 根目錄中的 `renderer.js` (渲染引擎腳本) 複製並覆蓋至 Target Directory (目標目錄).
-4. 聚焦 Discord (Discord 通訊軟體) 視窗並執行 `Ctrl + R` (重新載入快捷鍵) 以觸發 UI Reload (使用者介面重新載入).
+1. 前往本 Repository (版本庫) 的 Releases (發布頁面), 下載最新版本的 `.zip` Zip Archive (壓縮檔案).
+2. 定位 Vencord (Vencord 客戶端模組) 的 Output Directory (輸出目錄). Windows (Windows 作業系統) 預設路徑為: `%appdata%\Vencord\dist`.
+3. 將下載的 `.zip` 檔案移動至該目錄下.
+4. 解壓縮該檔案, 並選擇 Overwrite (覆寫) 目錄下現有的 `renderer.js` (渲染引擎腳本) 等檔案.
+5. 聚焦 Discord (Discord 通訊軟體) 視窗並執行 `Ctrl + R` (重新載入快捷鍵) 以觸發 UI Reload (使用者介面重新載入).
 
 ## 4. Iteration Protocol (迭代流程 - 開發者)
 若需擴充或修改 Translation Strings (翻譯字串), 請遵循以下 Pipeline (管線):
@@ -31,7 +35,7 @@
 
 ## 5. Maintenance Cycle (維護週期)
 * Update Override (更新覆蓋): 當 Vencord (Vencord 客戶端模組) 觸發 Auto-Update (自動更新) 時, 系統的 `renderer.js` (渲染引擎腳本) 將被上游覆蓋.
-* Restoration (還原): 需重新自此 Repository (版本庫) 獲取最新檔案並重複 Deployment Protocol (部署流程).
+* Restoration (還原): 需重新自 Releases (發布頁面) 獲取最新 `.zip` 檔案並重複 Deployment Protocol (部署流程).
 
 ## 6. Security & Risk Mapping (安全性與風險映射)
 * Terms of Service (服務條款): 修改客戶端違反 Discord (Discord 通訊軟體) ToS (服務條款). 部署風險由使用者自負.
