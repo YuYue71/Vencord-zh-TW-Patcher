@@ -1100,6 +1100,7 @@
     "\"settings of the Settings plugin\"": "\"更改此設定區塊的顯示位置\"",
     "\"Windows transparent background effects. You need a theme that supports transparency or this will do nothing. A restart is required after changing this setting.\"": "\"Windows 透明背景效果. 你需要一個支援透明度的主題, 否則此設定將無效. 更改此設定後需要重新啟動.\"",
     "\"None\"": "\"無\"",
+    "\"None \"": "\"無 \"",
     "\"Mica (incorporates system theme + desktop wallpaper to paint the background)\"": "\"Mica (結合系統主題 + 桌面壁紙來繪製背景)\"",
     "\"Tabbed (variant of Mica with stronger background tinting)\"": "\"Tabbed (Mica 的變體，具有更強的背景著色)\"",
     "\"Acrylic (blurs the window behind Vesktop for a translucent background)\"": "\"Acrylic (對 Vesktop 背後的視窗進行模糊處理，以實現半透明背景)\"",
@@ -1290,6 +1291,9 @@
 
     "_SECTION_7": "========== 備份與還原 (Backup & Restore) ==========",
     "\"Warning\"": "\"警告\"",
+    "\"Warning \"": "\"警告 \"",
+    "\"Warning:\"": "\"警告:\"",
+    "\"Warning: \"": "\"警告: \"",
     "\"Importing a settings file will overwrite your current settings.\"": "\"匯入設定檔將會覆蓋你的目前設定.\"",
     "\"You can import and export your Vencord settings as a JSON file. This allows you to easily transfer your settings to another device, or recover your settings after reinstalling Vencord or Discord.\"": "\"你可以將 Vencord 設定匯入和匯出為 JSON 檔案。這讓你能夠輕鬆地在不同裝置之間傳輸設定，或在重新安裝 Vencord 或 Discord 後恢復設定。\"",
     "\"Settings Export contains:\"": "\"設定匯出包含:\"",
@@ -1297,5 +1301,28 @@
     "\"\\u2014 Theme Links\"": "\"\\u2014 主題連結\"",
     "\"\\u2014 Plugin Settings\"": "\"\\u2014 插件設定\"",
     "\"Import Settings\"": "\"匯入設定\"",
-    "\"Export Settings\"": "\"匯出設定\""
+    "\"Export Settings\"": "\"匯出設定\"",
+
+    "_SECTION_STARTUP_TIMINGS": "========== 啟動時間統計 ==========",
+    "\"Trace ended at: \"": "\"追蹤結束於: \"",
+    "\"Startup Timings\"": "\"啟動時間統計\"",
+    "\"Start\"": "\"開始\"",
+    "\"Interval\"": "\"間隔\"",
+    "\"Delta\"": "\"差異\"",
+    "\"Event\"": "\"事件\"",
+
+    "_SECTION_EXPERIMENTS": "========== 實驗功能 ==========",
+    "\"experiments\"": "\"實驗功能\"",
+    "\"Hold on!!\"": "\"請注意!!\"",
+    "\"Experiments are unreleased Discord features. They might not work, or even break your client or get your account disabled.\"": "\"實驗功能為 Discord 尚未發布之功能. 它們可能無法正常運作, 甚至導致你的客戶端損壞或帳號遭到停權.\"",
+    "\"Only use experiments if you know what you're doing. Vencord is not responsible for any damage caused by enabling experiments. If you don't know what an experiment does, ignore it. Do not ask us what experiments do either, we probably don't know.\"": "\"僅在了解其運作原理之情況下使用實驗功能. Vencord 對於啟用實驗功能所造成之任何損害概不負責. 若你不清楚某項實驗功能之作用, 請直接忽略. 也請勿向我們詢問實驗功能之具體作用, 因為我們可能也不清楚.\"",
+    "\"No, you cannot use server-side features like checking the \\\"Send to Client\\\" box.\"": "\"否, 你無法使用伺服器端功能, 例如勾選 \\\"Send to Client\\\" (發送至客戶端) 選項.\"",
+    "\"Search experiments\"": "\"搜尋實驗功能\"",
+    "\"User\"": "\"使用者\"",
+    "\"Variant Override\"": "\"變體覆蓋\"",
+    "\"Currently unassigned\"": "\"目前未分配\"",
+    "'Warning: Server did not send any experiment config. You may need to check the \"Send to Client\" box in the admin UI.'": "'警告: 伺服器未發送任何實驗配置. 您可能需要在管理界面中勾選 \"Send to Client\" (發送至客戶端) 選項.'",
+    "\"Server Descriptor\"": "\"伺服器描述\"",
+    "\"Override Descriptor\"": "\"覆蓋描述\"",
+    "\"Recent Exposures\"": "\"最近的曝光\""
 }
